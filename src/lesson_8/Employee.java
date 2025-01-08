@@ -18,13 +18,7 @@ class Employee {
     }
 
     public void printInfo() {
-        System.out.println("Full Name: " + fullName);
-        System.out.println("Position: " + position);
-        System.out.println("Email: " + email);
-        System.out.println("Phone: " + phone);
-        System.out.println("Salary: " + salary);
-        System.out.println("Age: " + age);
-        System.out.println();
+        System.out.println("Full Name: " + fullName + " Position: " + position + " Email: " + email + " Phone: " + phone + " Salary: " + salary + " Age: " + age);
     }
 
     public int getAge() {
@@ -40,7 +34,6 @@ class Employee {
         employees[3] = new Employee("Kuznetsov Kuz", "Developer", "kuznetsov@mailbox.com", "892312315", 60000, 28);
         employees[4] = new Employee("Smirnov Smir", "Designer", "smirnov@mailbox.com", "892312316", 35000, 50);
 
-        System.out.println("Employees older than 40:");
         for (Employee employee : employees) {
             if (employee.getAge() > 40) {
                 employee.printInfo();
